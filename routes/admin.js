@@ -14,4 +14,8 @@ router.get('/product-list', adminController.getProducts);
 //use post or get (or put, patch) to trigger the middleware when only post or get data request
 router.post('/add-product', adminController.postAddProducts);
 
+router.get('/edit-product/:productId', adminController.getEditProducts);
+
+router.post('/edit-product', adminController.postEditProduct);
+
 module.exports = router;
